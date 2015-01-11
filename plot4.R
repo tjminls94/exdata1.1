@@ -37,7 +37,7 @@ par(mfrow= c(2,2))
 
 x<-extract$DateTime
 y<-as.numeric(as.character(extract$Global_active_power))
-plot(x,y,type="n",xlab="",ylab="Global Active Power (kilowats)")
+plot(x,y,type="n",xlab="",ylab="Global Active Power")
 lines(x,y)
 
 ## create plot 2: voltage over time
@@ -62,7 +62,7 @@ legend("topright", lty=1, c("Sub_meeting_1                ","Sub_meeting_2      
 ## create plot 4: global reactive power
 x<-extract$DateTime
 y<-as.numeric(as.character(extract$Global_reactive_power))
-plot(x,y,type="n",xlab="datetime",ylab="Global Active Power (kilowats)")
+plot(x,y,type="n",xlab="datetime",ylab="Global_reactive_power")
 lines(x,y)
 
 
