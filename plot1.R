@@ -21,7 +21,7 @@ extract <- subset(powerdata, subset=(Date >="2007-02-01" & Date <="2007-02-02"))
 
 ## create histogram plot
 
-extract$Global_active_power<-as.numeric(extract$Global_active_power)
+extract$Global_active_power<-as.numeric(as.character(extract$Global_active_power))
 hist(extract$Global_active_power,main="Global Active Power", xlab="Global Active Power (kilowatts)", col="red")
 
 ## copy to PNG file
